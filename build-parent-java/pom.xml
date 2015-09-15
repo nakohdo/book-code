@@ -19,9 +19,9 @@
     <description>Maven build parent for the eXist Book Java Code Examples</description>
     
     <properties>
-        <project.build.source>1.6</project.build.source>
-        <project.build.target>1.6</project.build.target>
-        <exist.version>2.1</exist.version>
+        <project.build.source>1.8</project.build.source>
+        <project.build.target>1.8</project.build.target>
+        <exist.version>3.0.RC1</exist.version>
     </properties>
     
     <build>
@@ -81,13 +81,13 @@
         <dependencies>
             <dependency>
                 <groupId>org.exist-db</groupId>
-                <artifactId>existdb-core</artifactId>
+                <artifactId>exist-core</artifactId>
                 <version>${exist.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.exist-db</groupId>
+                <groupId>org.exist-db.thirdparty.org.xmldb</groupId>
                 <artifactId>xmldb-api</artifactId>
-                <version>1.0</version>
+                <version>1.0-patched</version>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
